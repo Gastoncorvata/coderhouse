@@ -1,0 +1,288 @@
+/*--------clase-SASS-II--------*/
+.btn-outline-lista-cbtn {
+  background: lista-cbtn;
+  color: lista-cbtn;
+}
+
+* {
+  list-style: none;
+}
+
+body {
+  background-image: url(../img/back4.jfif);
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+body a:hover {
+  color: #ffff00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header {
+  min-height: 80vh;
+  color: #ffffff;
+}
+
+.header .row {
+  margin-top: 15%;
+  width: 100%;
+}
+
+.header .row h1 {
+  font-size: 60px;
+  text-shadow: -2px -3px 3px #7a7a7a7a;
+}
+
+.header .row h1 span {
+  padding: 10px;
+  color: #444444;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  text-shadow: -3px -5px 3px #fddb3a;
+}
+
+.header .row h2 {
+  font-size: 35px;
+  text-shadow: -2px -3px 3px #7a7a7a7a;
+  font-weight: 800;
+}
+
+.header .row h2 span {
+  color: #444444;
+}
+
+.header .row .navbar .nav-link {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.header-main {
+  padding-top: 80px;
+}
+
+.team {
+  padding-bottom: 60px;
+}
+
+.team .member {
+  overflow: hidden;
+  border-radius: 4px;
+  background: #ffffff;
+  -webkit-box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: members;
+          animation-name: members;
+}
+
+.team .member .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.team .member .member__info {
+  padding: 25px 15px;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member__info--format-h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #444444;
+}
+
+.team .member .member__info-span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.team .member .member__info--format-p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #555555;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.team .member .social a {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #444444;
+  margin: 0 3px;
+  padding-top: 7px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: #fddb3a;
+  display: inline-block;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  color: #ffffff;
+}
+
+.team .member .social a:hover {
+  background: rgba(16, 110, 234, 0.5);
+}
+
+.team .member .social i {
+  font-size: 24px;
+}
+
+@-webkit-keyframes members {
+  0% {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes members {
+  0% {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container__section-title--format {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.container__section-title--format p {
+  margin: 15px auto 0 auto;
+  font-weight: 600;
+}
+
+.container__section-title--format h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 10;
+  color: #444444;
+}
+
+.container__section-title--format h3 span {
+  padding: 7px;
+  color: #fddb3a;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
+
+.container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .send-us {
+  margin: 90px 0 80px;
+}
+
+.container .send-cv {
+  padding: 15px;
+  border: solid 2px #fddb3a;
+  -webkit-box-shadow: -2px -3px 3px #7a7a7a7a;
+          box-shadow: -2px -3px 3px #7a7a7a7a;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.container .send-cv .enviar {
+  margin-top: 15px;
+}
+
+.container .send-cv .btn-outline-warning {
+  margin-top: 15px;
+}
+
+.container h2 em {
+  padding: 10px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  text-shadow: -3px -5px 3px #fddb3a;
+}
+
+.form-cv {
+  color: #444444;
+  font-weight: 600;
+  border: solid 1px #444444;
+  padding: 20px;
+  margin: 20px;
+}
+
+/*-------------------SASS 2da ENTREGA ----------mixim con parametros-listas-----------------*/
+#footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  fond-style: bold;
+}
+
+#footer {
+  /**background-color: $transparente-footer;
+        font-style: bold;
+        color: $white-text;**/
+}
+
+#footer a:hover {
+  color: #fddb3a;
+}
+
+#footer a {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#footer ul {
+  padding: 0px;
+}
+
+#footer .social-links i {
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  footer .footer-links {
+    display: none;
+  }
+}
+
+.icono-footer {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.end-footer {
+  text-align: center;
+  padding: 15px;
+}
+/*# sourceMappingURL=estilos.css.map */
