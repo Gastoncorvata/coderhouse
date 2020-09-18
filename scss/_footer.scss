@@ -1,0 +1,50 @@
+/*-------------------SASS 2da ENTREGA ----------mixim con parametros-listas-----------------*/
+@mixin footer-option($fondo, $letras, $estilo) {
+    background-color: $fondo;
+    color: $letras;
+    fond-style: $estilo;
+}
+#footer {
+    @include footer-option(rgba(0, 0, 0, .7), #ffffff, bold);
+}
+
+    #footer {
+        /**background-color: $transparente-footer;
+        font-style: bold;
+        color: $white-text;**/
+
+        a:hover {
+            color: $secundario;
+        }
+
+        a {
+            color: $primario;
+            font-weight: $clarito;
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        .social-links {
+            i {
+                margin: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        footer .footer-links {
+            display: none;
+        }
+    }
+
+    .icono-footer {
+        font-size: 30px;
+        color:$white-text;
+    }
+
+    .end-footer {
+        text-align: center;
+        padding: 15px;
+    }

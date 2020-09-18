@@ -1,0 +1,37 @@
+$grey-text: #444444;
+$yellow-text:#fddb3a;
+$yellow-link: #ffff00;
+$white-text:#ffffff;
+$grey-shadow:-2px -3px 3px #7a7a7a7a;
+$yellow-shadow: -3px -5px 3px $yellow-text;
+$transparente: rgba(0, 0, 0, .5);
+$transparente-footer: rgba(0, 0, 0, .7);
+$border-radius: 50px;
+$gris-clarito:#555555;
+
+
+
+/*--------clase-SASS-II--------*/
+$lista_footer--ancla: #ffffff,
+#fddb3a,
+#444444,
+#ffff00;
+$primario: nth($list: $lista_footer--ancla, $n: 1);
+$secundario: nth($list: $lista_footer--ancla, $n: 2);
+
+$map-bold:(900: 900,
+    700: 700,
+    600: 600,
+    500: 500,
+    400: 400,
+    200: 200,
+);
+$clarito: map-get($map: $map-bold, $key: 400);
+
+$lista-cbtn: #fddb3a,#7a7a7a7a,#ffffff;
+@each $var in lista-cbtn {
+    .btn-outline-#{$var} {
+        background: $var;
+        color: $var;
+    }
+}

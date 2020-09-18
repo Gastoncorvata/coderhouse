@@ -1,0 +1,39 @@
+.header {
+    min-height: 80vh;
+    color: $white-text;
+
+    .row {
+        margin-top: 15%;
+        width: 100%;
+
+        h1 {
+            font-size: 60px;
+            text-shadow: $grey-shadow;
+
+            span {
+                padding: 10px;
+                color: $grey-text;
+                background: $transparente;
+                border-radius: $border-radius;
+                text-shadow: $yellow-shadow;
+            }
+        }
+
+        h2 {
+            font-size: 35px;
+            text-shadow: $grey-shadow;
+            font-weight: 800;
+
+            span {
+                color: $grey-text;
+            }
+        }
+
+        .navbar {
+            .nav-link {
+                margin-right: 20px;
+                padding: 5px;
+            }
+        }
+    }
+}

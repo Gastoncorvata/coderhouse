@@ -1,0 +1,167 @@
+.header-main {
+    padding-top: 80px;
+}
+
+.team {
+    padding-bottom: 60px;
+
+    .member {
+        overflow: hidden;
+        border-radius: 4px;
+        background: $white-text;
+        box-shadow: -3px -3px 5px $transparente;
+        animation-duration: 1s;
+        animation-name: members;
+
+        .member:hover {
+            .social {
+                opacity: 1;
+                bottom: 15px;
+            }
+        }
+
+        .member__info {
+            padding: 25px 15px;
+        }
+
+        .member-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member__info--format-h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: $grey-text;
+        }
+
+        .member__info-span {
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+            color: $white-text;
+            text-decoration: underline;
+        }
+
+        .member__info--format-p {
+            font-style: italic;
+            font-size: 14px;
+            line-height: 26px;
+            color: $gris-clarito;
+        }
+
+        .social {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            right: 0;
+            opacity: 0;
+            transition: ease-in-out 0.3s;
+            text-align: center;
+
+            a {
+                transition: color 0.3s;
+                color: $grey-text;
+                margin: 0 3px;
+                padding-top: 7px;
+                border-radius: 4px;
+                width: 36px;
+                height: 36px;
+                background: $yellow-text;
+                display: inline-block;
+                transition: ease-in-out 0.3s;
+                color: $white-text;
+            }
+
+            a:hover {
+                background: rgba(16, 110, 234, 0.5);
+            }
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@keyframes members {
+    0% {
+        transform: scaleX(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container__section-title--format {
+    text-align: center;
+    padding-bottom: 30px;
+
+    p {
+        margin: 15px auto 0 auto;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin: 15px 0 0 0;
+        font-size: 32px;
+        font-weight: 10;
+        color: $grey-text;
+
+        span {
+            padding: 7px;
+            color: $yellow-text;
+            background: $transparente;
+            border-radius: $border-radius;
+        }
+    }
+}
+
+.container {
+    .row {
+        align-items: center;
+    }
+
+    .send-us {
+        margin: 90px 0 80px;
+    }
+
+    .send-cv {
+        padding: 15px;
+        border: solid 2px $yellow-text;
+        box-shadow: $grey-shadow;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: $white-text;
+        font-weight: 700;
+
+        .enviar {
+            margin-top: 15px;
+        }
+
+        .btn-outline-warning{
+            margin-top: 15px;
+        }
+    }
+
+    h2 {
+        em {
+            padding: 10px;
+            color: $white-text;
+            background: $transparente;
+            border-radius: $border-radius;
+            text-shadow: $yellow-shadow;
+        }
+    }
+}
+
+.form-cv {
+    color: $grey-text;
+    font-weight: 600;
+    border: solid 1px $grey-text;
+    padding: 20px;
+    margin: 20px;
+
+}
