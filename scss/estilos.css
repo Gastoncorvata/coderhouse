@@ -240,6 +240,45 @@ body a:hover {
   margin: 20px;
 }
 
+.carousel-inner div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container #carousele .carousel-inner .carousel-item h5 {
+  font-size: 28px;
+  color: #fddb3a;
+  font-weight: 700;
+}
+
+.container #carousele .carousel-inner .carousel-item h2 {
+  font-size: 2rem;
+  color: #fddb3a;
+  font-weight: 700;
+}
+
+.container #carousele .carousel-inner .carousel-item p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.container #carousele .carousel-inner .carousel-item a {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.container #carousele .carousel-inner .carousel-item a:hover {
+  color: #fddb3a;
+  font-weight: 800;
+}
+
+.container #carousele .carousel-inner .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+
 /*-------------------SASS 2da ENTREGA ----------mixim con parametros-listas-----------------*/
 #footer {
   background-color: rgba(0, 0, 0, 0.7);

@@ -141,7 +141,7 @@
             margin-top: 15px;
         }
 
-        .btn-outline-warning{
+        .btn-outline-warning {
             margin-top: 15px;
         }
     }
@@ -171,6 +171,47 @@
         img {
             max-width: 100%;
             height: auto;
+        }
+    }
+}
+
+.container {
+    #carousele {
+        .carousel-inner {
+            .carousel-item {
+                h5 {
+                    font-size: 28px;
+                    color: $secundario;
+                    font-weight: 700;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    color: $secundario;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: $primario;
+                    font-weight: 500;
+                }
+
+                a {
+                    font-size: 22px;
+                    color: $primario;
+                    font-weight: 700;
+                }
+                a:hover{
+                    color: $secundario;
+                    font-weight: 800;
+                }
+
+                .carousel-caption{
+                    background-color: rgba($color: #000000, $alpha: .4);
+                    border-radius: $border-radius;
+                }
+            }
         }
     }
 }
