@@ -3,11 +3,13 @@
     color: $white-text;
 
     .row {
-        margin-top: 15%;
+        margin-top: 10%;
         width: 100%;
 
         h1 {
-            font-size: 60px;
+            font-family: 'Black Ops One', cursive;
+            font-size: 120px;
+            font-weight: 900;
             text-shadow: $grey-shadow;
 
             span {
@@ -20,9 +22,10 @@
         }
 
         h2 {
-            font-size: 35px;
+            font-family: 'Libre Barcode 128 Text', cursive;
+            font-size: 75px;
             text-shadow: $grey-shadow;
-            font-weight: 800;
+            font-weight: 500;
 
             span {
                 color: $grey-text;
