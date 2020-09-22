@@ -2,7 +2,7 @@
 @mixin footer-option($fondo, $letras, $estilo) {
     background-color: $fondo;
     color: $letras;
-    fond-style: $estilo;
+    font-style: $estilo;
 }
 #footer {
     @include footer-option(rgba(0, 0, 0, .7), #ffffff, bold);
