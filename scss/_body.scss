@@ -254,29 +254,35 @@
     }
 }
 .sinbg{
-        background-image: url(../img/404.png);
+        background-image: linear-gradient(to right, $grey-text, $gris-clarito, $primario);
     .error404{
+        background-image: url(../img/404.png);
+        box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.5);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         height: 100vh;
         width: auto;
+        padding-top: 150px;
+        padding-left: 200px;
         h1{
-            color: $principal;
-            opacity: .3;
+            color: $primario;
+            width: 100px;
+            opacity: .2;
             font-size: 40px;
             font-family: 'Black Ops One' ;
-            text-align: center;
-            background-color: rgba(104, 102, 102, 0.6);
+            text-align: start;
+            background-color: rgba(104, 102, 102, 0.7);
         }
         a{
-            color: $principal;
-            opacity: .3;
+            color: $primario;
+            opacity: .5;
             font-size: 40px;
             font-family: 'Black Ops One' ;
-            text-align: center;
-            background-color: rgba(104, 102, 102, 0.6);
-            transform: translate(100px -70px)
+            align-items: stretch;
+            background-color: rgba(104, 102, 102, 0.7);
+            margin-right: 50vh;
+            margin-top: 50vh;
         }
     }
 }
-    
