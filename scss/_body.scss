@@ -253,27 +253,30 @@
         }
     }
 }
-.error404{
-    background-image: url(../img/404.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: auto;
-    h1{
-        color: $principal;
-        opacity: .3;
-        font-size: 40px;
-        font-family: 'Black Ops One' ;
-        text-align: center;
-        background-color: rgba(104, 102, 102, 0.6);
-    }
-    a{
-        color: $principal;
-        opacity: .3;
-        font-size: 40px;
-        font-family: 'Black Ops One' ;
-        text-align: center;
-        background-color: rgba(104, 102, 102, 0.6);
-        transform: translate(50% -50%);
+.sinbg{
+        background-image: url(../img/404.png);
+    .error404{
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: auto;
+        h1{
+            color: $principal;
+            opacity: .3;
+            font-size: 40px;
+            font-family: 'Black Ops One' ;
+            text-align: center;
+            background-color: rgba(104, 102, 102, 0.6);
+        }
+        a{
+            color: $principal;
+            opacity: .3;
+            font-size: 40px;
+            font-family: 'Black Ops One' ;
+            text-align: center;
+            background-color: rgba(104, 102, 102, 0.6);
+            transform: translate(100px -70px)
+        }
     }
 }
+    
