@@ -123,18 +123,30 @@
 
 /*------nosotros.html----*/
 .container {
-    .row {
-        align-items: center;
-    }
 
     .sumate {
+        align-items: center;
         border: solid 5px $grey-shadow;
         box-shadow: $grey-shadow;
-    }
-
-    .send-us {
-        margin: 90px 0 80px;
-    }
+        .we-seek{
+            margin: 50px 0 50px 0;
+        }
+        .we-seek-r{
+            margin-top: 30px;
+        }
+        .we-offer{
+            margin: 50px 0 50px 0;
+        }
+        .we-offer-r{
+            margin-top: 30px;
+        }
+        .send-us {
+        margin: 70px 0 50px;
+        }
+        .send-us-r{
+            margin: 20px 0 30px 0;
+        }
+    }    
 
     .send-cv {
         padding: 15px;
@@ -175,19 +187,20 @@
 
 .separador {
     background-image: url(../img/separador.png);
-
     margin: 80px;
     margin-top: 0px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 70px;
+    padding-top: 55px;
+}
+.forma-parte{
     font-family: 'Black Ops One';
-    font-size: 57px;
+    font-size: 37px;
     font-weight: 500;
     text-align: center;
     color: $gris-clarito;
-    padding-top: 55px;
 }
 
 .carousel-inner {
