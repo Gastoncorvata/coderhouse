@@ -1,4 +1,3 @@
-
 window.onscroll = function () {
     scrollable();
 }
@@ -16,4 +15,5 @@ function scrollable() {
 scrollable();
 
 window.addEventListener("load", function (){
-    document.getElementById("loader")})
+    document.getElementById("loader").classList.toggle("loader2")
+})
