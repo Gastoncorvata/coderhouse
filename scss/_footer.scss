@@ -34,7 +34,13 @@
     }
 
     @media (max-width: 700px) {
-        footer .footer-links {
+        #footer .footer-links {
+            display: none;
+        }
+    }
+
+    @media (max-width:576px){
+        #footer .footer-contact{
             display: none;
         }
     }
