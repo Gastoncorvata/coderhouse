@@ -6,13 +6,6 @@
 }
 #footer {
     @include footer-option(rgba(0, 0, 0, .7), #ffffff, bold);
-}
-
-    #footer {
-        /**background-color: $transparente-footer;
-        font-style: bold;
-        color: $white-text;**/
-
         a:hover {
             color: $secundario;
         }
