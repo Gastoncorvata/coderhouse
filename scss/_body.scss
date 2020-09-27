@@ -253,6 +253,7 @@
         }
     }
 }
+/*404*/
 .sinbg{
         background-image: linear-gradient(to right, $grey-text, $gris-clarito, $primario);
     .error404{
@@ -261,8 +262,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-        width: auto;
+        height: auto;
+        width: 100%;
         padding-top: 150px;
         padding-left: 200px;
         h1{
@@ -275,14 +276,52 @@
             background-color: rgba(104, 102, 102, 0.7);
         }
         a{
-            color: $primario;
+            color: $secundario;
             opacity: .5;
             font-size: 40px;
             font-family: 'Black Ops One' ;
             align-items: stretch;
             background-color: rgba(104, 102, 102, 0.7);
-            margin-right: 50vh;
-            margin-top: 50vh;
+            margin-right: 50%;
+            margin-top: 50%;
         }
     }
 }
+@media (max-width:576px){
+    .error404{
+        width: 400px;
+        padding: 0px;
+        h1{
+            padding: 0;
+            text-align: start;
+            font-size: 20px;
+        }
+        a{
+            padding: 0;
+            text-align: start;
+            font-size: 20px;
+            margin: 0px;
+        }
+    }
+}
+.icono-video{
+    background-color: $primario;
+    a{
+        i{
+            color: $gris-clarito;
+            font-size: 25px;
+        }
+        i:hover{
+            color:$secundario;
+        }
+    }
+}
+.foto-video:hover{
+    border: 1px solid $secundario;
+    box-shadow: 0 0px 25px $primario;
+    cursor:zoom-in;
+}
+.foto-video{
+    border-radius: 10px;
+}
+

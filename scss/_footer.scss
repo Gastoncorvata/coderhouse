@@ -6,6 +6,7 @@
 }
 #footer {
     @include footer-option(rgba(0, 0, 0, .7), #ffffff, bold);
+    text-align: center;
         a:hover {
             color: $secundario;
         }
@@ -20,8 +21,8 @@
         }
 
         .social-links {
-            width: max-content;
             i {
+                text-align: center;
                 margin: 10px;
             }
         }
