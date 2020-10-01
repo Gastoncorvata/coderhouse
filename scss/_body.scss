@@ -257,7 +257,7 @@
         text-align: center;
         font-size: 28px;
         span{
-            padding: 10px;
+            padding: 5px;
             color: rgba($color: #ffffff, $alpha: 0.7);
             background: $transparente;
             border-radius: 20px;
@@ -298,7 +298,20 @@
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0 30px 0;
-
+    margin: 15px;
+    @media (max-width: 700px){
+        width: 100%;
+        height: auto;
+    }
+}
+.video-maquina{
+    @media (max-width:576px){
+        width: 350px;
+        height: auto;}
+    @media (max-width: 700px){
+        width: 400px;
+        height: auto;
+    }
 }
 /*404*/
 .sinbg{
