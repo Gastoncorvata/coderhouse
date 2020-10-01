@@ -252,6 +252,50 @@
             }
         }
     }
+    .subtitulo-productos{
+        font-family: $marca;
+        text-align: center;
+        font-size: 28px;
+        span{
+            padding: 10px;
+            color: rgba($color: #ffffff, $alpha: 0.7);
+            background: $transparente;
+            border-radius: 20px;
+        }
+    }
+}
+/*maquinas*/
+.text-center{
+    margin: 10px;
+    font-family: $marca;
+    font-size: 28px;
+    span{
+        padding: 4px;
+        color: $yellow-text;
+        background: $transparente;
+        border-radius: $border-radius;
+    }
+}
+
+.contenedor-seccion{
+    .row{
+        margin-top: 10px;
+    }
+}
+.text-h2{
+    margin-top: 80px;
+    font-family: $marca;
+    font-size: 35px;
+}
+
+.p-maquinas{
+    background-color: $transparente;
+    color: $primario;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 30px 0 ;
+
 }
 /*404*/
 .sinbg{
