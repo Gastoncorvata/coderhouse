@@ -3,7 +3,8 @@
 }
 
 body {
-    background-image: url(../img/back4.jfif);
+    background-image: url(../img/bg-img.jpg);
+    background-size: cover;
     min-height: 100%;
     font-family: "Open Sans", sans-serif;
     color: $grey-text;

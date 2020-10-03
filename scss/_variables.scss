@@ -25,7 +25,7 @@ $map-bold:(900: 900,
     400: 400,
     200: 200,
 );
-$clarito: map-get($map: $map-bold, $key: 400);
+$clarito: map-get($map: $map-bold, $key: 200);
 
 $lista-cbtn: #fddb3a,#7a7a7a7a,#ffffff;
 @each $var in $lista-cbtn {
