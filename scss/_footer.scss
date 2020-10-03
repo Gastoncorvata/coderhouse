@@ -1,11 +1,11 @@
-/*-------------------SASS 2da ENTREGA ----------mixim con parametros-listas-----------------*/
+
 @mixin footer-option($fondo, $letras, $estilo) {
     background-color: $fondo;
     color: $letras;
     font-style: $estilo;
 }
 #footer {
-    @include footer-option(rgba(0, 0, 0, .7), #ffffff, bold);
+    @include footer-option(rgba(0, 0, 0, .9), #ffffff, bold);
     text-align: center;
         a:hover {
             color: $secundario;
@@ -49,3 +49,15 @@
         text-align: center;
         padding: 15px;
     }
+
+.footer-in{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+}
+@media (max-height: 830px){
+    .footer-in{
+        position: relative;
+    }
+}

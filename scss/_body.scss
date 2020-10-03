@@ -1,7 +1,7 @@
 .header-main {
     padding-top: 80px;
 }
-
+/*------nosotros.html----*/
 .team {
     padding-bottom: 60px;
 
@@ -9,11 +9,14 @@
         overflow: hidden;
         border-radius: 4px;
         background: $white-text;
-        box-shadow: -3px -3px 5px $transparente;
-        animation-duration: 1s;
+        animation-duration: 3s;
         animation-name: members;
+        }
+    .member:hover{
+        box-shadow: -3px -3px 5px $transparente;
+    }
 
-        .member:hover {
+        .member-img:hover, .member:hover{
             .social {
                 opacity: 1;
                 bottom: 15px;
@@ -21,12 +24,12 @@
         }
 
         .member__info {
-            padding: 25px 15px;
-        }
+            padding: 25px 15px;}
 
         .member-img {
             position: relative;
             overflow: hidden;
+            z-index: 1;
         }
 
         .member__info--format-h4 {
@@ -68,14 +71,14 @@
                 border-radius: 4px;
                 width: 36px;
                 height: 36px;
-                background: $yellow-text;
+                background: $transparente;
                 display: inline-block;
                 transition: ease-in-out 0.3s;
                 color: $white-text;
             }
 
             a:hover {
-                background: rgba(16, 110, 234, 0.5);
+                background: $secundario;
             }
 
             i {
@@ -83,7 +86,7 @@
             }
         }
     }
-}
+
 
 @keyframes members {
     0% {
@@ -120,8 +123,6 @@
         }
     }
 }
-
-/*------nosotros.html----*/
 .container {
 
     .sumate {
@@ -132,13 +133,15 @@
             margin: 50px 0 50px 0;
         }
         .we-seek-r{
+            font-weight: 700;
             margin-top: 30px;
         }
         .we-offer{
             margin: 50px 0 50px 0;
         }
         .we-offer-r{
-            margin-top: 30px;
+            font-weight: 700;
+            margin-top: 15px;
         }
         .send-us {
         margin: 70px 0 50px;
