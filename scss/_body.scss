@@ -135,6 +135,14 @@
         .we-seek-r{
             font-weight: 700;
             margin-top: 30px;
+            p{
+                border: solid 2px $yellow-text;
+                box-shadow: $grey-shadow;
+                border-radius: .25rem;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 10px;
+                color: $primario;
+            }
         }
         .we-offer{
             margin: 50px 0 50px 0;
@@ -142,6 +150,14 @@
         .we-offer-r{
             font-weight: 700;
             margin-top: 15px;
+            p{
+                border: solid 2px $yellow-text;
+                box-shadow: $grey-shadow;
+                border-radius: .25rem;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 10px;
+                color: $primario;
+            }
         }
         .send-us {
         margin: 70px 0 50px;
@@ -155,7 +171,8 @@
         padding: 15px;
         border: solid 2px $yellow-text;
         box-shadow: $grey-shadow;
-        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: .25rem;
+        background-color: rgba(0, 0, 0, 0.4);
         color: $white-text;
         font-weight: 700;
 
@@ -290,7 +307,9 @@
     font-family: $marca;
     font-size: 35px;
 }
-
+.ultimo{
+        margin-bottom: 25px;
+    }
 .p-maquinas{
     background-color: $transparente;
     color: $primario;
@@ -387,4 +406,80 @@
 .foto-video{
     border-radius: 10px;
 }
+.contactanos{
+    max-width: 800px;
+    margin: 80px auto 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba($color: #000000, $alpha: .4);
+    padding: 30px;
+    background-color: rgba($color: #d4a815, $alpha: .2);
+    border-radius: .5rem;
+    .titulo__contactanos{
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $marca;
+        letter-spacing: 4px;
+        font-size: 4rem;
+        line-height: 48px;
+        padding-bottom: 20px;
+        color: $yellow-text;
+        background: linear-gradient(to left, $grey-text 0%, $primario 50%, $grey-text 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
+    @media (max-width: 600px) {
+        .titulo__contactanos{
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .titulo__contactanos{
+            font-size: 2rem;
+        }
+    }
+
+    .container{
+        .contact-form{
+            .form-field{
+                position: relative;
+                margin: 32px 0;
+            }
+            .input-text{
+                display: block;
+                width: 100%;
+                height: 40px;
+                border-width: 0 0 2px 0;
+                border-color: $gris-clarito;
+                background-color: transparent;
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: $clarito;
+                }   
+            .input-text:focus +.label,
+            .not-empty +.label{
+                transform: translateY(-16px);
+                color: $primario;
+                text-shadow: $grey-shadow;
+            }
+            .input-text:focus{
+                outline: none;
+            }
+            .label{
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+                font-size: 16px;
+                font-weight: 600;
+                color: $gris-clarito;
+                cursor: text;
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+    }
+}
+.mapa-contacto{
+    padding: 0;
+    margin: 25px 0 0 0;
+}

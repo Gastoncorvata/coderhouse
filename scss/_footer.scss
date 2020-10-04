@@ -1,12 +1,14 @@
 
 @mixin footer-option($fondo, $letras, $estilo) {
-    background-color: $fondo;
     color: $letras;
     font-style: $estilo;
+    
 }
 #footer {
+    background: url(../img/bg3-img.jpg);
     @include footer-option(rgba(0, 0, 0, .9), #ffffff, bold);
     text-align: center;
+    box-shadow: 0 -5px 15px #000000;
         a:hover {
             color: $secundario;
         }
@@ -18,6 +20,12 @@
 
         ul {
             padding: 0px;
+        }
+
+        .footer-redes{
+            span{
+                color: $yellow-text;
+            }
         }
 
         .social-links {
@@ -48,6 +56,9 @@
     .end-footer {
         text-align: center;
         padding: 15px;
+        span{
+            color: $yellow-text;
+        }
     }
 
 .footer-top{
@@ -63,4 +74,8 @@
     .footer-in{
         position: relative;
     }
+}
+.footer-mapa{
+    border: none;
+    box-shadow: none;
 }
